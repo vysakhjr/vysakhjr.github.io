@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
     <title>Vysakh R | Site Reliability Engineer</title>
 
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #0f172a;
+            background: linear-gradient(
+            135deg,
+            #0f172a 0%,
+            #111827 50%,
+            #020617 100%);
             color: white;
         }
 
@@ -19,6 +26,9 @@
         h1 {
             font-size: 60px;
             margin-bottom: 10px;
+            background: linear-gradient(90deg,#38bdf8,#60a5fa,#93c5fd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         h2 {
@@ -41,10 +51,17 @@
         }
 
         .card {
-            background: #1e293b;
+            background: rgba(30, 41, 59, 0.8);
             padding: 20px;
-            border-radius: 10px;
-            min-width: 220px;
+            border-radius: 15px;
+            border: 1px solid rgba(56, 189, 248, 0.15);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(8px);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(56, 189, 248, 0.2);
         }
 
         .number {
@@ -54,7 +71,7 @@
         }
 
         .section {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: auto;
             padding: 60px 20px;
         }
@@ -100,9 +117,8 @@
         <h2>Site Reliability Engineer</h2>
 
         <p class="tagline">
-            Building reliable infrastructure,
-            automating operations,
-            and solving production incidents at scale.
+            Building reliable systems, automating operations 
+            and solving complex production challenges at scale.
         </p>
 
         <div class="stats">
