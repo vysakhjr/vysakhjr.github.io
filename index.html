@@ -80,6 +80,18 @@
             text-align: center;
             margin-bottom: 40px;
         }
+        @media (max-width: 768px) {
+
+        nav {
+            flex-direction: column;
+            gap: 15px;
+            }
+
+        #about > div {
+            grid-template-columns: 1fr !important;
+            }
+
+        }
     </style>
 
 </head>
@@ -214,15 +226,60 @@
 
     <div class="section" id="about">
 
-        <h2>About Me</h2>
+    <h2>About Me</h2>
 
-        <p>
-            Site Reliability Engineer with experience in Linux,
-            AWS, Kubernetes, Terraform, Ansible and Production
-            Incident Management.
-        </p>
+    <div style="
+        display:grid;
+        grid-template-columns:2fr 1fr;
+        gap:30px;
+        align-items:center;
+    ">
+
+        <div class="card">
+
+            <h3>🚀 Site Reliability Engineer</h3>
+
+            <p style="
+                line-height:1.8;
+                color:#cbd5e1;
+            ">
+
+                I'm a Site Reliability Engineer with 5+ years of experience
+                managing Linux production infrastructure, cloud platforms,
+                automation, and incident response.
+
+                My focus is on building reliable systems, reducing operational
+                toil through automation, and improving service availability
+                through observability and engineering best practices.
+
+                I enjoy solving complex production issues, automating repetitive
+                work, and continuously improving infrastructure reliability.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Quick Facts</h3>
+
+            <p>🏢 IBM</p>
+
+            <p>☁️ AWS Certified</p>
+
+            <p>🔴 RHCSA Certified</p>
+
+            <p>🐧 Linux Engineer</p>
+
+            <p>☸️ CKAD Aspirant</p>
+
+            <p>📍 Bangalore, India</p>
+
+        </div>
 
     </div>
+
+</div>
     <div class="section" id="skills">
 
     <h2>Engineering Capabilities</h2>
@@ -440,6 +497,23 @@
     </div>
 
 </div>
+
+<footer style="
+    text-align:center;
+    padding:40px;
+    color:#94a3b8;
+    border-top:1px solid rgba(255,255,255,0.1);
+">
+
+    <p>
+        © 2026 Vysakh R
+    </p>
+
+    <p>
+        Site Reliability Engineer • Linux Engineer • Cloud Enthusiast
+    </p>
+
+</footer>
 
 </body>
 </html>
